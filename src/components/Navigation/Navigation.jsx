@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Navigation.module.scss";
+import SearchBar from "../SearchBar/SearchBar"
 import { Link } from "react-router-dom";
 
 const Navigation = () => {
@@ -16,6 +17,7 @@ const Navigation = () => {
         <Link to="/favourites">Favourites</Link>
       </h2>
     </div>
+      <SearchBar />
     </>
   );
 };

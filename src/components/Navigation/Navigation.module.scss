@@ -3,4 +3,11 @@
 	flex-direction: row;
 	justify-content: space-evenly;
 	margin: 20px 0;
+
+	a {
+		// Use <a> Tag for styling purposes, as Link tag is returning an <a> tag
+		text-decoration: none;
+		color: purple;
+		font-size: 1rem;
+	}
 }

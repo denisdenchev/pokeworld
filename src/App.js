@@ -1,3 +1,4 @@
+import React from 'react';
 import './App.scss';
 import { useTranslation } from 'react-i18next';
 import LandingPage from './containers/LandingPage';
@@ -8,6 +9,7 @@ import Navigation from './components/Navigation';
 
 function App() {
 	const { t } = useTranslation();
+
 	return (
 		<div className='App'>
 			<Router>
