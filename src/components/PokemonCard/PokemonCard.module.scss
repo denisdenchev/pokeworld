@@ -1,0 +1,55 @@
+.card {
+	width: 80vw;
+	max-width: 280px;
+	height: 320px;
+	max-height: 320px;
+	padding: 10px;
+	margin: 10px auto;
+	box-shadow: 0px 0px 20px -2px grey;
+	border-radius: 6px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+
+	.topRow {
+		max-width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+
+		.imageWrapper {
+			img {
+				object-fit: contain;
+				width: 100%;
+			}
+		}
+
+		.favourite {
+			position: absolute;
+			right: 20px;
+			top: 20px;
+			.heartIcon {
+				color: rgb(201, 201, 175);
+				font-size: 20px;
+				:hover {
+					color: rgb(15, 240, 15);
+					cursor: pointer;
+				}
+			}
+		}
+	}
+	.bottomRow {
+		h2 {
+			text-align: center;
+			margin: 5px 0;
+		}
+		.listOfSkills {
+			margin: 10px 0;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-evenly;
+			list-style: none;
+		}
+	}
+}
