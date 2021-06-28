@@ -5,10 +5,10 @@ import { faHeart } from '@fortawesome/free-solid-svg-icons';
 import image1 from '../../images/testPokemon.png'
 
 const PokemonCard = (props) => {
-  const {image} = props;
+  const {image, name,pokeKey} = props;
   return (
     <>
-      <div className={styles.card}>
+      <div className={styles.card} key={pokeKey}>
         <div  className={styles.topRow}>
           <div className={styles.imageWrapper}><img src={image1} alt="pokemon image" /></div>
           <div className={styles.favourite}>
@@ -16,7 +16,7 @@ const PokemonCard = (props) => {
           </div>
         </div>
         <div className={styles.bottomRow}>
-          <h2>Pokemon Name</h2>
+          <h2>{name}</h2>
           <div >
             <ul className={styles.listOfSkills}>
               <li>
